@@ -1,4 +1,4 @@
-import { Layout, Intro, HowItWorks, TextBlock, Block3 } from 'components'
+import { Layout, Intro, HowItWorks, TextBlock, Block3, Faq } from 'components'
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
         <Intro />
         <HowItWorks />
         <Block3 />
+        <Faq />
         <TextBlock />
       </>
     </Layout>

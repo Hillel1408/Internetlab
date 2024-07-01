@@ -1,6 +1,6 @@
 import globalStyles from 'styles/Globals.module.scss'
 import styles from 'components/HowItWorks/HowItWorks.module.scss'
-import { images } from 'assets/images'
+import { images } from 'assets'
 
 export default function HowItWorks() {
   const list = [

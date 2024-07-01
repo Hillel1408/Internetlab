@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import globalStyles from 'styles/Globals.module.scss'
 import styles from 'components/Header/Header.module.scss'
-import { images } from 'assets/images'
+import { images } from 'assets'
 
 export default function Header() {
   const navList = [
