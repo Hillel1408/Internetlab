@@ -1,9 +1,9 @@
-import { Layout } from 'components'
+import { Layout, Intro } from 'components'
 
 function App() {
   return (
     <Layout>
-      <div></div>
+      <Intro />
     </Layout>
   )
 }
