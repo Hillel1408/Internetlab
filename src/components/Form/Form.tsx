@@ -51,7 +51,11 @@ export default function Form() {
                         error={!values.tel && toched ? "Поле обязательно к заполнению" : ""}
                         success={values.tel}
                     />
-                    <Checkbox label="Согласен, отказываюсь" checked={values.checkbox} onChange={() => setValues({ ...values, checkbox: !values.checkbox })} />
+                    <Checkbox
+                        label="Согласен полчать рассылку"
+                        checked={values.checkbox}
+                        onChange={() => setValues({ ...values, checkbox: !values.checkbox })}
+                    />
                     <Button
                         text="Отправить"
                         style={styles.btn}
