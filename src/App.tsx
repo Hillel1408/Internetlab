@@ -4,10 +4,10 @@ function App() {
     return (
         <Layout>
             <>
-                {/* <Intro /> */}
+                <Intro />
                 <HowItWorks />
-                {/* <Block3 />
-                <Reviews /> */}
+                <Block3 />
+                {/* <Reviews /> */}
                 <Faq />
                 <TextBlock />
                 <Form />

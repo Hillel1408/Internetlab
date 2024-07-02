@@ -16,7 +16,9 @@ export default function Block3() {
                             Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах.
                         </p>
                     </div>
-                    <img src={images.block3} alt="" width="" height="" />
+                    <div>
+                        <img src={images.block3} alt="" width="" height="" />
+                    </div>
                 </div>
             </div>
         </div>
