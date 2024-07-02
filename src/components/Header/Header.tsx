@@ -5,10 +5,10 @@ import { images } from "assets";
 
 export default function Header() {
     const navList = [
-        { text: "Как это работает", href: "#" },
-        { text: "3-й блок", href: "#" },
-        { text: "Вопросы и ответы", href: "#" },
-        { text: "Форма", href: "#" },
+        { text: "Как это работает", href: "#howItWorks" },
+        { text: "3-й блок", href: "#block3" },
+        { text: "Вопросы и ответы", href: "#faq" },
+        { text: "Форма", href: "#form" },
     ];
 
     return (

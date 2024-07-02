@@ -37,7 +37,7 @@ export default function Faq() {
         },
     ];
     return (
-        <div className={styles.root}>
+        <div className={styles.root} id="faq">
             <div className={globalStyles.container}>
                 <h2 className={globalStyles.title2}>Вопросы и ответы</h2>
                 <ul className={styles.spoilers}>

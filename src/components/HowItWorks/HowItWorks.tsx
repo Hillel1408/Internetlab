@@ -27,7 +27,7 @@ export default function HowItWorks() {
     ];
 
     return (
-        <section className={styles.root}>
+        <section className={styles.root} id="howItWorks">
             <div className={globalStyles.container}>
                 <h2 className={globalStyles.title2}>Как это работает</h2>
                 <div className={styles.grid}>

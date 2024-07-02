@@ -4,7 +4,7 @@ import { images } from "assets";
 
 export default function Block3() {
     return (
-        <div className={styles.root}>
+        <div className={styles.root} id="block3">
             <div className={globalStyles.container}>
                 <div className={styles.grid}>
                     <div>

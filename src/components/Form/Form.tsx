@@ -27,7 +27,7 @@ export default function Form() {
     };
 
     return (
-        <div className={styles.root}>
+        <div className={styles.root} id="form">
             <div className={globalStyles.container}>
                 <h2 className={globalStyles.title2}>Отправь форму</h2>
                 <div>

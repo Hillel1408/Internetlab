@@ -14,6 +14,9 @@
     --primary: #2a6cea;
     --primary-hover: #397dff;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Graphik LCG";
     margin: 0;
