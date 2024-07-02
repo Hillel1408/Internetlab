@@ -1,37 +1,37 @@
 .root {
-  height: 100vh;
-  background: url('../../assets/images/intro-bg.avif');
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & > div:first-child {
-    height: 100%;
-    background-color: var(--primary);
-    opacity: 0.8;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
+    height: 100vh;
+    background: url("../../assets/images/intro-bg.avif");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div:first-child {
+        height: 100%;
+        background-color: var(--primary);
+        opacity: 0.8;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
 }
 .block {
-  max-width: 748px;
-  text-align: center;
-  position: relative;
-  & > h1 {
-    margin-bottom: 18px;
-    color: var(--white);
-  }
-  & > p {
-    color: var(--white);
-    margin-bottom: 92px;
-  }
+    max-width: 748px;
+    text-align: center;
+    position: relative;
+    & > h1 {
+        margin-bottom: 18px;
+        color: var(--white);
+    }
+    & > p {
+        color: var(--white);
+        margin-bottom: 92px;
+    }
 }
 .btn {
-  background-color: var(--light-gray);
-  width: fit-content;
-  border: none;
-  color: var(--black);
-  cursor: pointer;
+    background-color: var(--light-gray);
+    width: fit-content;
+    border: none;
+    color: var(--black);
+    cursor: pointer;
 }

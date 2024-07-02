@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--black);
+    & > input {
+        transform: translateY(-1px);
+    }
+}

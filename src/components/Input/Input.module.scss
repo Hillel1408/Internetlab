@@ -1,0 +1,48 @@
+.root {
+    position: relative;
+    & > input {
+        height: 64px;
+        background-color: #f6f8fa;
+        border: none;
+        outline: 2px solid #f6f8fa;
+        border-radius: 4px;
+        padding: 0 16px;
+        width: 100%;
+        box-sizing: border-box;
+        &:focus {
+            outline: 2px solid #c2c8cd;
+            background-color: var(--white);
+        }
+    }
+    & > img {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    & > label {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--dark-gray);
+        transition: 0.3s;
+    }
+}
+.active {
+    transform: none !important;
+    top: 2px !important;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--gray) !important;
+}
+.success {
+    background-color: var(--white) !important;
+}
+.error {
+    background-color: var(--white) !important;
+    outline: 2px solid var(--dangerous) !important;
+}
+.errorText {
+    color: var(--dangerous);
+}

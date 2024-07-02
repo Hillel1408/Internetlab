@@ -1,0 +1,23 @@
+.root {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    & > div {
+        & > h2 {
+            text-align: center;
+            margin-bottom: 44px;
+        }
+        & > div {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+    }
+}
+.btn {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
