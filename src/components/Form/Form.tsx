@@ -21,7 +21,7 @@ export default function Form() {
                 setValues(initialState);
                 setToched(false);
             } catch {
-                console.error("Failed");
+                alert("Ошибка отправки данных");
             }
         }
     };

@@ -3,6 +3,7 @@
     gap: 16px;
     align-items: center;
     color: var(--black);
+    cursor: pointer;
     & > input {
         transform: translateY(-1px);
     }
