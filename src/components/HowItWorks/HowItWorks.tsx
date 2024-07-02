@@ -33,9 +33,11 @@ export default function HowItWorks() {
                 <div className={styles.grid}>
                     {list.map((item, index) => (
                         <div key={index}>
-                            <img src={item.image} alt="" width="72px" height="72px" />
-                            <span className={globalStyles.title6}>{item.title}</span>
-                            <p className={globalStyles.text14}>{item.text}</p>
+                            <img src={item.image} alt="" width="" height="" />
+                            <div>
+                                <span className={globalStyles.title6}>{item.title}</span>
+                                <p className={globalStyles.text14}>{item.text}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
