@@ -7,6 +7,9 @@ import block3 from "assets/images/block3.png";
 import checkCircle from "assets/images/check-circle.svg";
 import cancel from "assets/images/cancel.svg";
 import unnamed from "assets/images/unnamed.svg";
+import vector from "assets/images/vector.svg";
+import close from "assets/images/close.svg";
+import menu from "assets/images/menu.svg";
 
 export const images = {
     logo,
@@ -18,4 +21,7 @@ export const images = {
     checkCircle,
     cancel,
     unnamed,
+    vector,
+    close,
+    menu,
 };

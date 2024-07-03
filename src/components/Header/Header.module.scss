@@ -7,6 +7,20 @@
     left: 0;
     right: 0;
     z-index: 1;
+    & > nav {
+        @media (max-width: 768px) {
+            position: absolute;
+            background-color: var(--white);
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            padding: 16px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+    }
 }
 .navList {
     display: flex;
@@ -14,21 +28,63 @@
     padding: 0;
     margin: 0;
     gap: 24px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+    }
     & > li {
         & > a {
             text-decoration: none;
             color: var(--white);
+            & > img {
+                display: none;
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+            @media (max-width: 768px) {
+                color: var(--gray);
+                padding: 16px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid var(--light-gray);
+            }
             &:hover {
                 text-decoration: underline;
             }
         }
+        &:last-child {
+            & > a {
+                @media (max-width: 768px) {
+                    border-bottom: 1px solid var(--light-gray);
+                }
+            }
+        }
     }
 }
-.logo {
-    display: flex;
-    gap: 9px;
-    align-items: center;
-    & > span {
-        color: var(--white);
+.mobileMenuHead {
+    padding-bottom: 28px;
+    padding-top: 12px;
+    display: none;
+    justify-content: space-between;
+    & > button {
+        background-color: transparent;
+        border: none;
     }
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+.openMenuBtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.active {
+    opacity: 1 !important;
+    visibility: visible !important;
 }

@@ -11,5 +11,6 @@ import Form from "components/Form/Form";
 import Input from "components/Input/Input";
 import Checkbox from "components/Checkbox/Checkbox";
 import Reviews from "components/Reviews/Reviews";
+import Logo from "components/Logo/Logo";
 
-export { Layout, Header, Footer, Intro, Button, HowItWorks, TextBlock, Block3, Faq, Form, Input, Checkbox, Reviews };
+export { Layout, Header, Footer, Intro, Button, HowItWorks, TextBlock, Block3, Faq, Form, Input, Checkbox, Reviews, Logo };
