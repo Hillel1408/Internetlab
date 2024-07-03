@@ -4,7 +4,7 @@ import globalStyles from "styles/Globals.module.scss";
 
 export default function Intro() {
     return (
-        <section className={styles.root}>
+        <div className={styles.root}>
             <div></div>
             <div className={styles.block}>
                 <h1 className={globalStyles.title1}>Говорят, никогда не поздно сменить профессию</h1>
@@ -17,6 +17,6 @@ export default function Intro() {
                     }}
                 />
             </div>
-        </section>
+        </div>
     );
 }
