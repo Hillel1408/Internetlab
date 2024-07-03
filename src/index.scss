@@ -22,3 +22,9 @@ body {
     margin: 0;
     min-width: 320px;
 }
+.swiper-slide {
+    height: auto !important;
+}
+.swiper-wrapper {
+    align-items: stretch;
+}

@@ -7,7 +7,7 @@ function App() {
                 <Intro />
                 <HowItWorks />
                 <Block3 />
-                {/* <Reviews /> */}
+                <Reviews />
                 <Faq />
                 <TextBlock />
                 <Form />

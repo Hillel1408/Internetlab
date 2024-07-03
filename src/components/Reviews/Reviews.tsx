@@ -65,8 +65,11 @@ export default function Reviews() {
                         spaceBetween={32}
                         className={styles.slider}
                         breakpoints={{
-                            551: {
+                            900: {
                                 slidesPerView: 3,
+                            },
+                            600: {
+                                slidesPerView: 2,
                             },
                         }}
                         pagination={{ clickable: true }}
