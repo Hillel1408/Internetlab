@@ -1,6 +1,8 @@
+import { Observer } from "components";
 import globalStyles from "styles/Globals.module.scss";
 import styles from "components/HowItWorks/HowItWorks.module.scss";
 import { images } from "assets";
+import classNames from "classnames";
 
 export default function HowItWorks() {
     const list = [
@@ -29,18 +31,22 @@ export default function HowItWorks() {
     return (
         <div className={styles.root} id="howItWorks">
             <div className={globalStyles.container}>
-                <h2 className={globalStyles.title2}>Как это работает</h2>
-                <div className={styles.grid}>
-                    {list.map((item, index) => (
-                        <div key={index}>
-                            <img src={item.image} alt="" width="" height="" />
-                            <div>
-                                <span className={globalStyles.title6}>{item.title}</span>
-                                <p className={globalStyles.text14}>{item.text}</p>
+                <Observer>
+                    <h2 className={classNames(globalStyles.title2, styles.title)}>Как это работает</h2>
+                </Observer>
+                <Observer>
+                    <div className={styles.grid}>
+                        {list.map((item, index) => (
+                            <div key={index} className={styles.gridItem}>
+                                <img src={item.image} alt="" width="" height="" />
+                                <div>
+                                    <span className={globalStyles.title6}>{item.title}</span>
+                                    <p className={globalStyles.text14}>{item.text}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                </Observer>
             </div>
         </div>
     );

@@ -1,3 +1,4 @@
+import { Observer } from "components";
 import styles from "components/TextBlock/TextBlock.module.scss";
 import globalStyles from "styles/Globals.module.scss";
 
@@ -26,10 +27,12 @@ export default function TextBlock() {
             <div className={globalStyles.container}>
                 <div className={styles.grid}>
                     {list.map((item, index) => (
-                        <div key={index}>
-                            <span className={globalStyles.text18}>{item.title}</span>
-                            <p className={globalStyles.text16}>{item.text}</p>
-                        </div>
+                        <Observer key={index}>
+                            <div className={styles.gridItem}>
+                                <span className={globalStyles.text18}>{item.title}</span>
+                                <p className={globalStyles.text16}>{item.text}</p>
+                            </div>
+                        </Observer>
                     ))}
                 </div>
             </div>

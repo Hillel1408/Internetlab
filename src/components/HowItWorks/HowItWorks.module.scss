@@ -5,18 +5,6 @@
         padding-top: 56px;
         padding-bottom: 56px;
     }
-    & > div {
-        & > h2 {
-            text-align: center;
-            margin-bottom: 61px;
-            @media (max-width: 768px) {
-                margin-bottom: 42px;
-            }
-            @media (max-width: 375px) {
-                margin-bottom: 26px;
-            }
-        }
-    }
 }
 .grid {
     display: grid;
@@ -28,32 +16,42 @@
     @media (max-width: 600px) {
         grid-template-columns: 1fr;
     }
-    & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+}
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @media (max-width: 768px) {
+        flex-direction: row;
+        gap: 16px;
+    }
+    & > img {
+        margin-bottom: 12px;
+        width: 72px;
+        height: 72px;
         @media (max-width: 768px) {
-            flex-direction: row;
-            gap: 16px;
+            width: 56px;
+            height: 56px;
         }
-        & > img {
-            margin-bottom: 12px;
-            width: 72px;
-            height: 72px;
-            @media (max-width: 768px) {
-                width: 56px;
-                height: 56px;
-            }
+    }
+    & > div {
+        & > span {
+            color: var(--black);
         }
-        & > div {
-            & > span {
-                color: var(--black);
-            }
-            & > p {
-                margin: 0;
-                color: var(--dark-gray);
-                margin-top: 4px;
-            }
+        & > p {
+            margin: 0;
+            color: var(--dark-gray);
+            margin-top: 4px;
         }
+    }
+}
+.title {
+    text-align: center;
+    margin-bottom: 61px;
+    @media (max-width: 768px) {
+        margin-bottom: 42px;
+    }
+    @media (max-width: 375px) {
+        margin-bottom: 26px;
     }
 }

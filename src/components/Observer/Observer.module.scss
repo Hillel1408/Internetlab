@@ -1,0 +1,10 @@
+.root {
+    overflow: hidden;
+    & > div {
+        transform: translateY(100%);
+        transition-duration: 1700ms;
+    }
+}
+.active {
+    transform: translateY(0) !important;
+}

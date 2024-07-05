@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import classNames from "classnames";
-import styles from "components/Input/Input.module.scss";
+import styles from "components/UI/Input/Input.module.scss";
 import globalStyles from "styles/Globals.module.scss";
 import { images } from "assets";
-import { InputProps } from "components/Input/Input.props";
+import { InputProps } from "components/UI/Input/Input.props";
 
 export default function Input({ type, label, value, onChange, error, success }: InputProps) {
     const inputRef = useRef<HTMLInputElement>(null);

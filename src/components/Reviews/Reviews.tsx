@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import classNames from "classnames";
+import { Observer } from "components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
 import { Pagination } from "swiper/modules";
@@ -54,7 +55,9 @@ export default function Reviews() {
     return (
         <div className={styles.root}>
             <div className={globalStyles.container}>
-                <h2 className={globalStyles.title2}>Отзывы</h2>
+                <Observer>
+                    <h2 className={classNames(globalStyles.title2, styles.title)}>Отзывы</h2>
+                </Observer>
                 <div className={styles.sliderWrapper}>
                     <Swiper
                         onBeforeInit={(swiper: SwiperCore) => {

@@ -16,23 +16,23 @@
         grid-template-columns: 1fr;
         row-gap: 20px;
     }
-    & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
-        & > span {
-            font-weight: 600;
-            color: var(--black);
-        }
-        & > p {
-            margin: 0;
-            color: var(--black);
-        }
-        @media (max-width: 768px) {
-            gap: 46px;
-        }
-        @media (max-width: 375px) {
-            gap: 14px;
-        }
+}
+.gridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    & > span {
+        font-weight: 600;
+        color: var(--black);
+    }
+    & > p {
+        margin: 0;
+        color: var(--black);
+    }
+    @media (max-width: 768px) {
+        gap: 46px;
+    }
+    @media (max-width: 375px) {
+        gap: 14px;
     }
 }
